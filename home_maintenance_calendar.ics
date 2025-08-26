@@ -1,33 +1,238 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//Katie Home//Home & Lawn Test//EN
+PRODID:-//Katie Home//Home & Lawn Maintenance//EN
 CALSCALE:GREGORIAN
-X-WR-CALNAME:Home & Lawn (TEST)
+X-WR-CALNAME:Home & Lawn Maintenance
 METHOD:PUBLISH
 
-BEGIN:VEVENT
-UID:test-today-1@katie-home
-DTSTAMP:20250826T120000Z
-DTSTART;VALUE=DATE:20250826
-SUMMARY:TEST: Do you see me today?
-DESCRIPTION:This is a test all-day event to confirm your subscription works. If you see this, your calendar URL is good.
-END:VEVENT
+########################
+# WINTER / GENERAL
+########################
 
 BEGIN:VEVENT
-UID:test-soon-1@katie-home
-DTSTAMP:20250826T120000Z
-DTSTART;VALUE=DATE:20250828
-SUMMARY:TEST: Near-future event shows up?
-DESCRIPTION:This should appear within the next couple of days. If it does, your feed is live and refreshing.
-END:VEVENT
-
-BEGIN:VEVENT
-UID:test-yearly-1@katie-home
+UID:humidifier-on@katie-home
 DTSTAMP:20250826T120000Z
 DTSTART;VALUE=DATE:20251101
 RRULE:FREQ=YEARLY;BYMONTH=11;BYMONTHDAY=1
-SUMMARY:TEST: Annual check (Nov 1)
-DESCRIPTION:This repeats every year on Nov 1 to verify recurring events work.
+SUMMARY:Turn ON Whole-Home Humidifier
+DESCRIPTION:Turn ON integrated humidifier for heating season. Clean/replace wire mesh filter (soak in vinegar if scaled). Set target RH ~35–40%. Reminder: you’ll turn this OFF in June. Glossary: Mesh filter = metal screen insert that collects minerals.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:snow-stakes-2nd-sat-jan@katie-home
+DTSTAMP:20250826T120000Z
+DTSTART;VALUE=DATE:20250111
+RRULE:FREQ=YEARLY;BYMONTH=1;BYDAY=2SA
+SUMMARY:Install Snow Stakes (2nd Saturday in January)
+DESCRIPTION:Place reflective stakes 3–4 ft tall along driveway and walks ~5–6 ft apart. Tools: rubber mallet, gloves. Helps plowing and avoids lawn damage.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:garage-freeze-check@katie-home
+DTSTAMP:20250826T120000Z
+DTSTART;VALUE=DATE:20251120
+RRULE:FREQ=YEARLY;BYMONTH=11;BYMONTHDAY=20
+SUMMARY:Garage Freeze Check
+DESCRIPTION:Move paints, sprays, cleaners, beverages, and any freezables to a temp-stable area. Protect batteries and adhesives. Put away garden liquids. Pet/kid safety: keep chemicals secured.
+END:VEVENT
+
+########################
+# HVAC FILTERS (QUARTERLY)
+########################
+
+BEGIN:VEVENT
+UID:hvac-filter-jan15@katie-home
+DTSTAMP:20250826T120000Z
+DTSTART;VALUE=DATE:20250115
+RRULE:FREQ=YEARLY;BYMONTH=1;BYMONTHDAY=15
+SUMMARY:HVAC Filter Change (Q1)
+DESCRIPTION:Replace MERV 8–11 pleated filter; check airflow arrow. Vacuum return grilles.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:hvac-filter-apr15@katie-home
+DTSTAMP:20250826T120000Z
+DTSTART;VALUE=DATE:20250415
+RRULE:FREQ=YEARLY;BYMONTH=4;BYMONTHDAY=15
+SUMMARY:HVAC Filter Change (Q2) + Spring pH Soil Test
+DESCRIPTION:Replace filter. SOIL TEST: Collect samples from 5 areas; send to extension lab or use kit. Target pH 6.0–7.0 for cool-season lawns. Adjust with lime (too acidic) or sulfur (too alkaline) per report.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:hvac-filter-jul15@katie-home
+DTSTAMP:20250826T120000Z
+DTSTART;VALUE=DATE:20250715
+RRULE:FREQ=YEARLY;BYMONTH=7;BYMONTHDAY=15
+SUMMARY:HVAC Filter Change (Q3) + Humidifier OFF
+DESCRIPTION:Replace filter. Turn OFF humidifier for summer; close bypass damper if present.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:hvac-filter-oct15@katie-home
+DTSTAMP:20250826T120000Z
+DTSTART;VALUE=DATE:20251015
+RRULE:FREQ=YEARLY;BYMONTH=10;BYMONTHDAY=15
+SUMMARY:HVAC Filter Change (Q4)
+DESCRIPTION:Replace filter. Prep for heating season; check returns and supply vents for dust.
+END:VEVENT
+
+########################
+# WATER / SPRINKLERS
+########################
+
+BEGIN:VEVENT
+UID:sprinkler-startup@katie-home
+DTSTAMP:20250826T120000Z
+DTSTART;VALUE=DATE:20250415
+RRULE:FREQ=YEARLY;BYMONTH=4;BYMONTHDAY=15
+SUMMARY:Sprinkler Startup (Underground System)
+DESCRIPTION:Open main valve slowly; check for leaks; test each zone. Early season schedule: 2–3x/week, deep watering (aim ~1\"/week total with rain). Adjust as weather warms.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:sprinkler-blowout@katie-home
+DTSTAMP:20250826T120000Z
+DTSTART;VALUE=DATE:20251015
+RRULE:FREQ=YEARLY;BYMONTH=10;BYMONTHDAY=15
+SUMMARY:Sprinkler Blow-Out & Winterize
+DESCRIPTION:Hire pro to blow out all zones before first hard freeze. Turn off controller; close exterior valves; insulate backflow preventer. Prevents split pipes/valves.
+END:VEVENT
+
+########################
+# DRIVEWAY
+########################
+
+BEGIN:VEVENT
+UID:driveway-seal@katie-home
+DTSTAMP:20250826T120000Z
+DTSTART;VALUE=DATE:20250515
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=15
+SUMMARY:Driveway Sealant (Asphalt)
+DESCRIPTION:Clean, fill cracks, apply sealer >50°F with no rain 24–48 hrs. Protect from traffic until dry. Extends life and reduces salt damage.
+END:VEVENT
+
+########################
+# GARDEN & BULBS & LAVENDER
+########################
+
+BEGIN:VEVENT
+UID:seed-starting-feb15@katie-home
+DTSTAMP:20250826T120000Z
+DTSTART;VALUE=DATE:20250215
+RRULE:FREQ=YEARLY;BYMONTH=2;BYMONTHDAY=15
+SUMMARY:Start Seeds Indoors (Tomatoes, Cucumbers, Carrots)
+DESCRIPTION:Use seed-start mix, trays, and lights. Keep moist (not soggy). Harden off 7–10 days before transplant. Note: carrots are best direct-sown outdoors later.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:mulch-refresh-may5@katie-home
+DTSTAMP:20250826T120000Z
+DTSTART;VALUE=DATE:20250505
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=5
+SUMMARY:Mulch Refresh (2–3 inches)
+DESCRIPTION:Top up beds 2–3\". Keep mulch a few inches away from trunks/stems to prevent rot and pests.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:lavender-planting-may20@katie-home
+DTSTAMP:20250826T120000Z
+DTSTART;VALUE=DATE:20250520
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=20
+SUMMARY:Plant English Lavender (Late Spring)
+DESCRIPTION:Full sun; excellent drainage. Space ~18–24\" apart. Amend heavy soil with grit/sand. Water to establish, then keep on the dry side.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:bulb-planting-oct10@katie-home
+DTSTAMP:20250826T120000Z
+DTSTART;VALUE=DATE:20251010
+RRULE:FREQ=YEARLY;BYMONTH=10;BYMONTHDAY=10
+SUMMARY:Plant Fall Bulbs (Tulips, Daffodils, Alliums)
+DESCRIPTION:Plant when soil cools. Depth ~2–3x bulb height. Store extras cool/dry in paper or mesh (40–50°F), not sealed plastic. Check monthly for rot.
+END:VEVENT
+
+########################
+# LAWN—CORE SCHEDULE (COOL-SEASON MICHIGAN)
+########################
+
+BEGIN:VEVENT
+UID:preemergent-007-mar25@katie-home
+DTSTAMP:20250826T120000Z
+DTSTART;VALUE=DATE:20250325
+RRULE:FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=25
+SUMMARY:Pre-Emergent 0-0-7 (Crabgrass Block) — Dog/Kid Off 24h
+DESCRIPTION:Target soil ~55°F (adjust a bit earlier/later). Apply to DRY lawn, then water in lightly or let a light rain do it. Avoid mowing 2–3 days before/after to keep the barrier intact. Pets/kids: off lawn until watered in and dry (~24h).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:summer-feed-160-48-jun1@katie-home
+DTSTAMP:20250826T120000Z
+DTSTART;VALUE=DATE:20250601
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=1
+SUMMARY:Summer Lawn Feed 16-4-8 — Dog/Kid Off 24h
+DESCRIPTION:Slow-release preferred for heat. Water in. Mow at 3–3.5\" to shade roots. Pets/kids: off until watered in and grass is dry (~24h).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:high-nitrogen-300-10-last-sat-aug@katie-home
+DTSTAMP:20250826T120000Z
+DTSTART;VALUE=DATE:20250830
+RRULE:FREQ=YEARLY;BYMONTH=8;BYDAY=-1SA
+SUMMARY:High-Nitrogen 30-0-10 (Late Aug) — Dog/Kid Off 24h
+DESCRIPTION:Apply after a fresh mow on a dry lawn; water in. Sets the stage for overseeding. Pets/kids: off 24h or until watered in and dry.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:overseed-starter-102010-sep15@katie-home
+DTSTAMP:20250826T120000Z
+DTSTART;VALUE=DATE:20250915
+RRULE:FREQ=YEARLY;BYMONTH=9;BYMONTHDAY=15
+SUMMARY:Overseed + Starter 10-20-10 — Dog/Kid Off 24h; Gentle Foot Traffic 2 Weeks
+DESCRIPTION:Aerate if possible (plug aerator best). Broadcast tall fescue mix. Apply starter fertilizer (10-20-10) once with seed. Sprinklers: mist/light water 2–3x/day until germination, then taper. Pets/kids: keep off 24h after fertilizer; limit heavy play ~2 weeks until first mow.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:winterizer-24010-oct1@katie-home
+DTSTAMP:20250826T120000Z
+DTSTART;VALUE=DATE:20251001
+RRULE:FREQ=YEARLY;BYMONTH=10;BYMONTHDAY=1
+SUMMARY:Slow-Release Winterizer 24-0-10 (Early Oct) — Dog/Kid Off 24h
+DESCRIPTION:Apply on dry grass and water in; great for root energy storage before winter. If you missed it, use by Oct 15. Pets/kids: off 24h or until watered in and dry.
+END:VEVENT
+
+########################
+# DOG SPOTS / KID SAFETY / DISEASE WATCH
+########################
+
+BEGIN:VEVENT
+UID:dog-spot-repair-apr15@katie-home
+DTSTAMP:20250826T120000Z
+DTSTART;VALUE=DATE:20250415
+RRULE:FREQ=YEARLY;BYMONTH=4;BYMONTHDAY=15
+SUMMARY:Dog Spot Repair (Rye/Fescue) — Limit Play ~2 Weeks
+DESCRIPTION:Flush fresh spots with water ASAP. Rake, add repair seed mix, keep moist. Pets/kids: gentle walking OK; avoid running/digging until new grass reaches 2\" (about 2 weeks).
+END:VEVENT
+
+BEGIN:VEVENT
+UID:disease-watch-jul15@katie-home
+DTSTAMP:20250826T120000Z
+DTSTART;VALUE=DATE:20250715
+RRULE:FREQ=YEARLY;BYMONTH=7;BYMONTHDAY=15
+SUMMARY:Lawn Disease Watch (Brown Patch/Fungus) — Safety: Off Until Dry
+DESCRIPTION:Look for circular brown areas with smoky ring. Treat with lawn fungicide per label. Water mornings only; reduce evening moisture. Pets/kids: keep off treated areas until product is dry (typically 4–24h).
+END:VEVENT
+
+########################
+# SOIL TEST (FALL)
+########################
+
+BEGIN:VEVENT
+UID:soil-test-sep1@katie-home
+DTSTAMP:20250826T120000Z
+DTSTART;VALUE=DATE:20250901
+RRULE:FREQ=YEARLY;BYMONTH=9;BYMONTHDAY=1
+SUMMARY:Soil Test & pH Check (Fall)
+DESCRIPTION:Collect cores from 5–10 spots; mix and send for analysis. Ideal pH for cool-season turf: 6.0–7.0. Adjust lime/sulfur per lab recommendations. Re-test yearly until stable.
 END:VEVENT
 
 END:VCALENDAR
