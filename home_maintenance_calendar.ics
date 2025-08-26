@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Katie Home//Home & Lawn Test//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Home & Lawn (TEST)
+METHOD:PUBLISH
+
+BEGIN:VEVENT
+UID:test-today-1@katie-home
+DTSTAMP:20250826T120000Z
+DTSTART;VALUE=DATE:20250826
+SUMMARY:TEST: Do you see me today?
+DESCRIPTION:This is a test all-day event to confirm your subscription works. If you see this, your calendar URL is good.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:test-soon-1@katie-home
+DTSTAMP:20250826T120000Z
+DTSTART;VALUE=DATE:20250828
+SUMMARY:TEST: Near-future event shows up?
+DESCRIPTION:This should appear within the next couple of days. If it does, your feed is live and refreshing.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:test-yearly-1@katie-home
+DTSTAMP:20250826T120000Z
+DTSTART;VALUE=DATE:20251101
+RRULE:FREQ=YEARLY;BYMONTH=11;BYMONTHDAY=1
+SUMMARY:TEST: Annual check (Nov 1)
+DESCRIPTION:This repeats every year on Nov 1 to verify recurring events work.
+END:VEVENT
+
+END:VCALENDAR
